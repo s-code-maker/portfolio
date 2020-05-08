@@ -1,0 +1,886 @@
+
+/*Спецификация*/
+html {font-size:11px; }
+body {font-family:'MuseoSansCyrl-900', sans-serif;
+      overflow-x: hidden;
+    }
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+  text-decoration: none;
+  outline: none;
+}
+
+ol, ul {padding: 0px;}
+/*Чтобы все было плавным*/
+* {
+  -moz-transition: all 0.3s ease;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}       
+
+/*Свой шрифты*/
+
+@font-face {
+  font-family: 'MuseoSansCyrl-100';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-100Italic';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.svg#MuseoSansCyrl-100Italic') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-300Italic';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.svg#MuseoSansCyrl-300Italic') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+font-face {
+  font-family: 'MuseoSansCyrl-900';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-900Italic';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.eot');
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.svg#MuseoSansCyrl-900Italic') format('svg'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {background: url(../img/background_header.png) no-repeat top/cover;
+        width: 100%;
+      }
+.header {background:url(../img/background_gradient.png) no-repeat top/cover;}
+.header_line {background: url(../img/background_top.png) no-repeat top;}
+
+.header__logo img{width: 170px;
+                  height: 62px;}
+
+.header__menu {padding-top:18px;}
+
+.menu__item {display: inline-block;
+             font-family: "MuseoSansCyrl-900";
+             font-weight: 800;
+             line-height: 17px;
+             text-transform: uppercase;
+             letter-spacing: 1.1px;
+             padding:5px;
+             margin-left:10px;}
+
+@-moz-document url-prefix() {.menu__item{letter-spacing: 0.1px;
+                                         margin-left: 0px;}}
+
+.menu__item:hover{border-radius: 3px;
+                  background: #375c70;
+                  padding:5px;
+                   }
+
+.menu__item:first-child{margin-left: 0px;}
+
+.menu__item a {color: #ffffff;}
+
+.contacts {color: #ffffff;
+          font-family: "MuseoSansCyrl-900";
+          font-size: 1.455rem;
+          font-weight: 400;
+          line-height: 1.909rem;
+          letter-spacing: 0.32px;}
+
+.contacts i{float: left;
+           margin-top: 20px;
+           color: #23aae2;
+           border-radius: 50%;
+           border: 1px dashed #23aae2;
+           padding: 3px;
+           margin-left: -10px;} 
+
+@-moz-document url-prefix(){
+
+	.contacts i {margin-left: -12px;}
+}
+
+.contacts__phone {float: right;
+                  margin-top: 10px;
+                  }
+
+@-moz-document url-prefix() {.contacts__phone {letter-spacing: 0.1px;
+                                               font-size: 1.22rem;}
+                             }
+
+.header__title {padding: 204px 0px 168px 0px;
+                opacity: 0.91;
+                text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+                color: #ffffff;
+                font-weight: 400;
+                line-height: 7.455rem;
+                text-transform: uppercase;
+                }
+
+.header__title h1 {font-size:8.182rem;
+                    letter-spacing: 3.764rem;}
+.header__title span {font-size: 4.636rem;
+                     letter-spacing: 0.927rem;}
+
+.jackdaw i      {color: #ffffff;
+                font-size:2.909rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                border: 1px dashed #ffffff;
+                border-radius: 50%;
+                padding: 2px 4px 2px 4px;
+                margin-bottom: 98px;
+                 }
+
+                                          /*    Вторая секция*/
+
+.advantages__title h2{padding: 89px 0px 62px 0px;
+                    color: #000000;
+                    font-size: 2.625rem;
+                    font-weight: 800;
+                    line-height: 1.545rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.382rem;}
+
+.advantages__item {width: 31.818rem;
+                  height: 31.818rem;
+                  background: #f4f4f4;}
+
+.advantages__item h3:after {content: "";
+                           display: block;
+                           width: 3.455rem;
+                           height: 0.091rem;
+                           background: #000000;
+                           opacity: 0.19;
+                           margin:0 auto;
+                           margin-top: 17px;
+                           margin-bottom: 17px;}
+
+.advantages__item {display: block;
+                  padding-top: 58px;       /* Почему не плучается выровнять padding у каждого элемента через nth-child*/
+                  margin-bottom:97px;}
+
+.advantages__img_first{width: 72px;
+                      height: 78px;
+                      margin:0 auto;
+                      background: url(../img/Helping_Hand.png) no-repeat;}
+
+.advantages__img_second{width: 80px;
+                        height: 78px;
+                        margin:0 auto;
+                        background: url(../img/Edit_Property.png) no-repeat;}
+
+.advantages__img_third{width: 97px;
+                      height: 71px;
+                      margin:0 auto;
+                      background: url(../img/Conference.png) no-repeat;}
+
+.advantages__item h3 {padding-top: 28px;
+                      color: #000000;
+                      font-size: 1.25rem;
+                      font-weight: 800;
+                      line-height: 1.063rem;
+                      font-family: "MuseoSansCyrl-900";
+                      text-transform: uppercase;
+                      letter-spacing: 2px;}
+
+.advantages__img_third {padding-bottom: 78px;}
+
+.advantages__item p {opacity: 0.8;
+                    color: #000000;
+                    font-family: "MuseoSansCyrl-100";
+                    font-size: 1.063rem;
+                    font-weight: 400;
+                    line-height: 1.375rem;}
+
+                               /*Третья секция - переезд в Болгарию*/
+
+.move {background:url(../img/background-move.png) no-repeat top/cover;}
+
+.move__title h2 {color: #ffffff;
+                font-family: "MuseoSansCyrl-900";
+                font-size:2.625rem;
+                font-weight: 800;
+                line-height: 1.063rem;
+                text-transform: uppercase;
+                letter-spacing: 0.263rem;
+                padding-top: 95px;
+                padding-bottom: 29px;}
+
+
+.move__title p {color: #ffffff;
+                font-family: "MuseoSansCyrl-100Itali";
+                font-size: 1.125rem;
+                font-weight: 400;
+                font-style: italic;
+                }
+
+.move__title span {font-family: "MuseoSansCyrl-900";
+                  font-size: 0.875rem;
+                  letter-spacing: 0.158rem;
+                  line-height: 1.813rem;
+                  text-transform: uppercase;
+                  font-style: normal;
+                  font-weight: 800;
+                  }
+
+                                        /*Позиционируем стрелочки*/
+
+.move__question {position: relative;
+                 margin-top: 42px;
+                 margin-bottom: 54px;}
+.move__arrow i {border: 1px dashed #ffffff;
+                border-radius: 50%;
+                color: #ffffff;
+                padding:5px;
+                background: #213646;
+                position: absolute;}
+
+.move__arrow_first i{top:-10%;}
+
+.move__arrow_second i{top:90%;}
+
+.move__text {padding: 30px;
+              border: 1px dashed #ffffff;
+              width: 564px;
+              height: 110px;
+              margin:0 auto;}
+
+
+@-moz-document url-prefix() {.move__text {width: 637px;}}
+
+.move__text p{color: #ffffff;
+              font-family: "MuseoSansCyrl-100";
+              font-size: 1.438rem;
+              font-weight: 100;
+              line-height: 2.188rem;
+              text-transform: uppercase;
+              }
+
+.move__text span {font-family: "MuseoSansCyrl-900";
+                  letter-spacing: 0.144rem;
+                  font-weight: 1000;}
+
+.move__answer {margin-bottom: 48px;}
+
+.move__answer h3 {font-family: "MuseoSansCyrl-900";
+                  color: #ffffff;
+                  font-weight: 1000;
+                  font-size: 1.438rem;
+                  letter-spacing: 0.231rem;
+                  line-height: 1.063rem;
+                  text-transform: uppercase;}
+
+.move__answer p {color: #ffffff;
+                font-family: "MuseoSansCyrl-100";
+                font-size: 1.15rem;
+                font-weight: 400;
+                letter-spacing: 0.113rem;
+                line-height: 1.938rem;
+                text-transform: none;}   
+
+.button a{color: #ffffff;
+          font-family: "MuseoSansCyrl-900";
+          font-size: 11px;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          border: 2px solid #fff;
+          border-radius: 4px;
+          padding: 16px;}
+
+.button {margin-bottom: 99px;}
+
+
+                         /*Четвертая секция - недвижимость и транспортные услуги*/
+
+.realty-and-transport {background: url(../img/background-city.png) no-repeat bottom/cover;}
+
+.realty-and-transport__title h2   {padding-top: 108px;
+                                  color: #000000;
+                                  font-size: 2.625rem;
+                                  font-weight: 800;
+                                  line-height: 1.063rem;
+                                  text-transform: uppercase;
+                                  letter-spacing: 0.263rem;
+                                  }
+.first-text {width: 661px;
+            height: 237px;
+            margin:0 auto;
+            background: #f4f4f4;
+            padding-top: 70px;
+            padding-bottom: 43px;
+            position: relative;
+            z-index: 3;
+            margin-top: 150px;
+            margin-bottom: 6px;}
+
+.circle1 {position: absolute;
+          z-index: 2;
+          top:13%;
+          left: 37%;}
+.circle2 {position: absolute;
+          z-index: 4;
+          top:5%;
+          left: 43%;}
+.circle3 {position: absolute;
+          z-index: 2;
+          top:13%;
+          left: 53%;}
+
+.first-text h3 {font-family: "MuseoSansCyrl-900";
+                font-weight: 800;
+                font-size: 1.45rem;
+                line-height: 2.963rem;
+                text-transform: uppercase;}
+
+.first-text p  {color: #000000;
+                font-family: "MuseoSansCyrl-100";
+                font-weight: 400;
+                font-size:1.463rem ;
+                font-weight: 400;}
+
+@-moz-document url-prefix() {.first-text p {font-size: 1.317rem;}}
+
+.last-text {width: 661px;
+            margin:0 auto;
+            background: #f4f4f4;
+            padding-top: 43px;
+            padding-bottom: 40px;
+            margin-bottom: 60px;}
+
+.last-text p {color: #000000;
+              font-family: "MuseoSansCyrl-100";
+              font-weight: 400;
+              font-size: 1.463rem;
+              font-weight: 400;
+              }
+@-moz-document url-prefix() {.last-text p {font-size: 1.317rem;}}
+
+.ball {position: absolute;
+       top:49%;
+      left: 47%;
+      z-index: 5;}
+
+@-moz-document url-prefix() {.ball {top:48%;}}
+
+.realty-and-transport__block .button a{font-weight: 800;
+                                       color: #23aae2;
+                                       border: 2px solid #23aae2;}
+
+
+                                       /*Пятая секция - отзывы наших клиентов*/
+
+.comments__title h2{color: #000000;
+                    font-size: 2.625rem;
+                    font-weight: 800;
+                    line-height: 1.063rem;
+                    text-transform: uppercase;
+                    padding-top: 89px;
+                    padding-bottom: 67px;}
+
+.comments__block {width: 665px;
+                  height: 138px;
+                  margin:0 auto;
+                  /*box-shadow: 1px 2px 4px rgba(149, 147, 147, 0.33);*/
+                  margin-bottom: 50px;
+                  position: relative;}
+
+.comments__photo img {float: left;
+                      margin-right: 64px;}
+
+.comments__text {text-align: justify;
+                 width: 579px;
+                 padding-top: 28px;
+                 margin-bottom: 51px;}
+
+.comments__text p:nth-of-type(2)  {color: #363636;
+                                  font-family: "MuseoSansCyrl-100Italic";
+                                  font-style: italic;
+                                  font-size: 0.875rem;
+                                  font-weight: 400;
+                                  line-height: 1.25rem;
+                                  letter-spacing: 0.088rem;}
+
+.comments__text p:nth-of-type(1) {color: #23aae2;
+                                  font-size: 0.75rem;
+                                  font-weight: 400;
+                                  line-height: 1.25rem;
+                                  text-transform: uppercase;
+                                  letter-spacing: 0.075rem;} 
+
+.comments__text p span:nth-of-type(1)  {color: #000000;
+                                        font-size: 1rem;
+                                        font-weight: 800;
+                                        line-height: 1.063rem;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.1rem;
+                                        }
+
+.comments__text p span:nth-of-type(2)  {text-decoration: underline;
+                                        font-weight: 800;}
+
+.comments__arrow_left i {position: absolute;
+                         left: 15%;
+                         top:30%;
+                         color: #23aae2;
+                         font-size: 2.813rem;
+                         font-weight: 400;}
+
+.comments__arrow_right i {position: absolute;
+                          color: #23aae2;
+                          font-size: 2.813rem;
+                          font-weight: 400;
+                          top: 30%;
+                          right: 15%;}
+
+.comments__circles .item {width: 19px;
+                          height: 19px;
+                          border: 1px dashed #23aae2;
+                          border-radius: 50%;
+                          display: inline-block;}
+
+.comments__circles .item:nth-child(2) {background: #23aae2;
+                                      margin:0px 10px 0px 10px;}
+
+.comments__circles {margin-top: 51px;
+                    margin-bottom: 89px;}
+
+
+                                     /*Шестая секция - вопросы*/
+.question {background: url(../img/background_question.png) no-repeat top/cover;}
+
+.question__title h2{color: #ffffff;
+                    font-size: 2.625rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0.263rem;
+                    line-height: 3.063rem;
+                    padding-top: 84px;}        
+
+.question__title p {color: #ffffff;
+                    font-family: "MuseoSansCyrl-100";
+                    font-size: 1.313rem;
+                    letter-spacing: 0.131rem;
+                    line-height: 1.688rem;
+                    text-transform: uppercase;
+                    padding-top: 5px;
+                    padding-bottom: 35px;}    
+
+.question__title i {border:1px dashed #fff;
+                    border-radius: 50%;
+                    padding:7px;
+                    color: #fff;
+                    margin-bottom: 30px;} 
+
+.form__input {padding: 15px 95px 15px 30px;
+              border-radius: 3px;
+              border: 1px solid #ffffff;
+              background: #30c2ff;
+              margin-bottom: 5px;
+              }   
+
+::placeholder { 
+               opacity: 0.56;
+              color: #ffffff;
+              font-family: "MuseoSansCyrl-300";
+              font-size: 0.913rem;
+              font-weight: 800;
+              line-height: 2.188rem;
+              text-transform: uppercase;
+              letter-spacing: 0.081rem;
+              }  
+
+.form__input_submit {background: rgba(0,0, 0, 0);
+                     padding:12px 46px 12px 46px;
+                     color: #fff;
+                     font-size: 0.938rem;
+                     font-weight: 400;
+                     line-height: 2.188rem;
+                     text-transform: uppercase;
+                     letter-spacing: 0.094rem;
+                     border: 1px solid #fff;
+                     border-radius: 5px;
+                     margin-top: 20px;
+                     margin-bottom: 84px;}  
+
+@-moz-document url-prefix() {.form__input_submit {padding: 12px 58px 12px 58px;}}
+
+                                         /*Footer*/
+
+footer {background: #23aae2;}  
+
+.footer__text li {display: inline-block;
+                  opacity: 0.76;
+                  color: #faf7f7;
+                  font-family: "MuseoSansCyrl-100";
+                  font-size: 0.875rem;
+                  font-weight: 400;
+                  line-height: 1.063rem;
+                  padding-top: 25px;
+                  }
+
+.footer__text li:first-child {padding-left: 40px;
+                              padding-right: 80px;}
+
+.footer__text li:last-child {border-bottom: 1px dotted #faf7f7;
+                             padding-bottom: 3px;}
+
+.footer__contacts i {color:#faf7f7;
+                     border: 1px #faf7f7 dashed; 
+                     margin-left:82px;
+                     }
+
+@-moz-document url-prefix() {.footer__contacts i { margin-left:70px;}}
+
+.footer__contacts {font-weight: 800;}
+
+.footer__logo {border:none;
+               }
+
+
+
+
+
+
+
+
+
+
+
+                                             /*Страница КОНТАКТЫ*/
+
+
+
+
+
+
+.contacts {background: #f7f7f7 bottom 80%;} /*Прижимаем фон к низу контейнера и делаем его размер равный 80% размера контейнера*/
+
+.contacts__header .contacts__phone {padding-top: 12px;
+                                    border-bottom: 1px dotted #ffffff;
+                                    padding-bottom: 2px;}
+
+@-moz-document url-prefix() {.contacts__header .contacts__phone {margin-top: 6px;}}
+
+.contacts__header .header__title {margin: 80px 0px 40px 0px;
+                                  padding: 0px;
+                                  }
+
+.contacts__header .header__title h1 {opacity: 0.91;
+                                    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+                                    color: #ffffff;
+                                    font-family: "MuseoSansCyrl-900";
+                                    font-size: 3.188rem;
+                                    font-weight: 800;
+                                    line-height: 4.063rem;
+                                    letter-spacing: 0.764rem;
+                                    text-transform: uppercase;}
+
+.contacts__header .jackdaw i {margin-bottom:131px;}
+
+.contacts-block {
+                 background: #fff;
+                 width: 1030px;
+                 height: 655px;
+                 margin:0 auto;
+                 margin-top: -90px;
+                 margin-bottom: 87px;
+                box-shadow: 3px 3px 22px -13px #000000;}
+
+.contacts-block__title {color: #000000;
+                        font-family: "MuseoSansCyrl-100";
+                        font-size: 1.630rem;
+                        font-weight: 400;
+                        line-height: 1.438rem;
+                        text-align: center;
+                        padding: 55px 0px 55px 0px;}
+
+.contacts__block_info {
+                       color: #000000;}
+
+.contacts__block_info .item {width: 279px;
+                             height: 72px;
+                             margin:52px 30px 0px 110px;
+                             }
+
+.contacts__block_info img {float: left;
+                           padding-top: 6px;}
+
+.contacts__block_info .text {float: right;
+                            width: 220px;
+                            height: 72px;}
+
+.contacts__block_info .text h2 {color: #000000;
+                                font-family: "MuseoSansCyrl-900";
+                                font-size: 1.525rem;
+                                font-weight: 800;
+                                line-height: 1.75rem;
+                                text-transform: uppercase;}
+
+.contacts__block_info .text p {color: #000000;
+                              font-family: "MuseoSansCyrl-100";
+                              font-size: 1.4rem;
+                              font-weight: 400;
+                              line-height: 2.5rem;}
+
+@-moz-document url-prefix() {.contacts__block_info .text p {line-height: 2rem;}
+                             }
+
+.contacts-block__form {width: 389px;
+                       height: 468px;
+                       background: #11b2f5;
+                       border-radius: 5px;}
+
+.contacts-block__form p:first-child {color: #ffffff;
+                                    font-family: "MuseoSansCyrl-900";
+                                    font-weight: 800;
+                                    font-size: 2.463rem;
+                                    letter-spacing: 0.156rem;
+                                    line-height: 1.625rem;
+                                    text-transform: uppercase;
+                                    padding-top: 44px;}
+
+.contacts-block__form p:nth-child(2)  {font-family: "MuseoSansCyrl-900";
+                                      font-size: 1.75rem;
+                                      letter-spacing: 0.125rem;
+                                      line-height: 1.625rem;
+                                      font-weight: 800;
+                                      text-transform: uppercase;
+                                      padding-bottom: 10px;}
+
+.contacts-block__form p  {font-family: "MuseoSansCyrl-100";
+                                          letter-spacing: 0.250rem;
+                                          line-height: 1.125rem;
+                                          text-transform: uppercase;}
+
+.contacts-block__form p:last-child {padding-bottom: 33px;}
+
+.contacts-block__form .form__input_submit{color: #ffffff;
+                                          font-family: "MuseoSansCyrl-900";
+                                          font-size: 1.15rem;
+                                          font-weight: 800;
+                                          line-height: 2.188rem;
+                                          text-transform: uppercase;
+                                          letter-spacing: 0.081rem;
+                                          padding: 12px 45px 12px 45px;
+                                          margin-top: 10px;}
+
+@-moz-document url-prefix() {.contacts-block__form .form__input_submit{padding: 12px 46px 12px 46px;}}
+
+.contacts-block__form .form__input {padding: 15px 70px 15px 30px;}
+
+
+
+
+                                     /*Страница Недвижимость и Переезд*/
+
+.realty-block__title {color: #000000;
+                      font-family: "MuseoSansCyrl-100";
+                      font-size: 1.363rem;
+                      font-weight: 400;
+                      line-height: 1.7rem;
+                      letter-spacing: 0.021rem;
+                      padding-top: 46px;}
+
+.realty-block__item {width: 400px;
+                     height: 463px;
+                     color: #000000;
+                     }
+
+.img_house {background: url(../img/house.png) no-repeat top;
+            width: 368px;
+            height: 156px;
+            padding-bottom: 242px;}
+
+.img_pack  {background: url(../img/pack.png) no-repeat bottom;
+            width: 297px;
+            height: 301px;
+            padding-top: 350px;}
+
+.realty-block__items {
+                      padding: 58px 64px 65px 90px;}
+
+.realty-block__item .text {opacity: 0.8;
+                          color: #000000;
+                          font-family: "MuseoSansCyrl-100";
+                          font-size: 1.49rem;
+                          font-weight: 400;
+                          line-height: 1.5rem;}
+
+
+
+                                        /*Страница О КОМПАНИИ*/
+
+.about-block {height: 100%;}
+
+.about-block__title {font-size: 1.563rem;
+                    letter-spacing: 0.091rem;
+                    }
+
+.line__one {text-align: center;}
+.line__one .item__first {padding-right: 30px;
+                        font-family: "MuseoSansCyrl-900";
+                        font-weight: 800;
+                        line-height: 2.545rem;
+                        text-transform: uppercase;
+                        color: #23aae2;
+                        font-size: 3.545rem;
+                        letter-spacing:0.355rem;}
+
+
+.line__one .item__first p {font-size: 1.364rem;
+                          font-weight: 400;
+                          line-height: 2.545rem;
+                          letter-spacing: 0.200rem;
+                          color: #000000;
+                          padding-top: 13px;}
+
+.line__one .item__second {color: #bdbdbd;
+                          font-family: "MuseoSansCyrl-100";
+                          font-size: 1.727rem;
+                          font-weight: 400;
+                          line-height: 2.378rem;
+                          text-transform: uppercase;
+                          letter-spacing: 0.24rem;
+                          margin-top: 20px;
+                          }
+
+@-moz-document url-prefix() {.line__one .item__second { margin-top:0px;}}
+
+.line__one .item__third {color: #000000;
+                        font-size: 2.727rem;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        color: #23aae2;
+                        letter-spacing:0.255rem;
+                        line-height: 2.741rem;
+                        padding-left: 30px;}
+
+.line__one .item__third p {letter-spacing:0.305rem;
+                           line-height: 3.133rem;
+                           color: #23aae2;
+                           color: #000000;
+                            font-size: 2.727rem;
+                            font-weight: 800;}  
+
+.line__two {background: #23aae2;
+            color: #fff;
+            font-size: 23px;
+            font-weight: 800;
+            line-height: 2.091rem;
+            text-transform: uppercase;
+            letter-spacing: 0.251rem;
+            padding: 30px 0px 30px 0px;
+            margin-top: 58px;}    
+
+.line__three {opacity: 0.99;
+              color: #000000;
+              font-size: 2.636rem;
+              font-weight: 800;
+              line-height: 2.727rem;
+              text-transform: uppercase;
+              letter-spacing: 0.264rem;
+              margin-top: 65px;}  
+
+.people {
+         margin:50px 0px 74px 0px;}
+
+@-moz-document url-prefix() {.people{ padding-bottom: 70px;}}         
+
+.people .item__first {width: 433px;
+                      height: 650px;
+                      background: #f4f4f4;
+                      padding:37px 33px 41px 33px;
+                      margin-left: 63px;}             
+
+.people .item__second {width: 433px;
+                      height: 650px;
+                      background: #f4f4f4;
+                      padding:37px 33px 110px 33px;}  
+
+.people .item__first .img {width: 134px;
+                          height: 134px;
+                          background: url(../img/Igor.png) no-repeat;
+                          margin:0 auto;
+                         }
+
+.people .item__second .img {width: 134px;
+                            height: 134px;
+                            background: url(../img/Viktor.png) no-repeat;
+                            margin:0 auto;
+                            }
+.people h3 {color: #000000;
+            font-size: 1.909rem;
+            font-weight: 800;
+            line-height: 2.727rem;
+            letter-spacing: 0.153rem;
+            text-align: center;
+            margin-top: 30px;}
+
+.people h3:after {content: "";
+                  display: block;
+                  width: 37px;
+                  height: 1px;
+                  background: #000000;
+                  opacity: 0.19;
+                  margin:0 auto;
+                  margin-top: 18px;
+                  margin-bottom: 22px;
+                  }
+
+.people p {opacity: 0.8;
+          color: #000000;
+          font-family: "MuseoSansCyrl-100";
+          font-size: 1.470rem;
+          font-weight: 400;
+          line-height: 2.091rem;
+          letter-spacing: 0.079rem;
+           text-align: justify;}
+
+
+
+                                             
+

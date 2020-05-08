@@ -1,0 +1,297 @@
+                                           /*Спецификация*/
+* {margin: 0px;
+   padding: 0px;
+   outline:none;}
+
+body {font-size: 16px;
+      font-family: 'Play', sans-serif;
+      color:#605d58 ;
+      background: rgba(207, 207, 205, 1);
+      }
+
+img {max-width: 100%;
+     height: auto;}
+
+h1 { font-family:"myfont";
+     font-size: 2.4rem;
+     padding-top: 50px;}
+
+h1:hover {color: red;}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/myfont.svg') format('svg'),
+       url('../fonts/myfont.ttf') format('truetype'),
+       url('../fonts/myfont.woff') format('woff'),
+       url('../fonts/myfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+                                        	/*Основная страница*/
+
+.header .header__logo img{width:150px;
+                          height: 150px;
+                          filter: grayscale(100%);}
+
+.header .header__logo img:hover {filter: grayscale(0%);}
+
+
+
+.header .header__title h1 {
+                           margin-left: 30px;
+                           color:#605d58 ;
+                           position:relative;}
+
+.header .header__title h1:after {content: "";
+                                 display: block;
+                                 background: rgb(140, 136, 132, 0);
+                                 width: 0px;
+                                 height: 2px;
+                                 transition: width .4s ease-in-out;
+                                 position:absolute;
+                                 left:39.5%;
+                                 transform:translateX(-50%);}
+
+.header .header__title h1:hover {color: red;
+                                 }
+
+.header .header__title h1:hover:after {background: red;
+                                       width: 700px;}
+
+.content__container {width: 370px;
+                     height: 230px;
+                     margin-bottom: 10px;
+                     border: 0.1px solid rgba(0,0,0,0); /*Убираю рамку и все съезжает?*/
+                     border-radius: 5%;
+                     filter: grayscale(100%);}
+
+.content__container:hover {filter: grayscale(0%);
+                           transition: 0.5s;}
+
+.content__container h2 {text-align: center;
+                        margin-top: 25%;
+                        color: #fff;
+                        font-weight: bold;}
+
+
+.content__container_about-me {background: url(../img/about-me.jpg) no-repeat top/cover;}
+.content__container_my-works {background: url(../img/my-works.jpg) no-repeat top/cover;}
+.content__container_skills {background: url(../img/skills.jpg) no-repeat top/cover;}
+.content__container_contacts {background: url(../img/contacts.jpg) no-repeat top/cover;}
+.content__container_top-secret {background: url(../img/top-secret.jpg) no-repeat top/cover;}
+.content__container_reflections {background: url(../img/reflections.jpg) no-repeat top/cover;}
+
+
+.footer i {font-size: 2.4rem;
+           margin-top: 50px;
+           padding: 20px;}
+.footer a {color: rgba(96, 93, 88, 1)}
+.footer i:hover {color: red;}
+
+.footer__home a {font-family:"myfont";
+                 font-size: 1.4rem;
+                 display: block;
+                 margin-top:55px;}
+
+.footer__home a:hover {color: red;}
+
+
+                                                         /*about-me*/
+
+.about-me__header h1 {
+                      margin-bottom: 100px;
+                     }
+
+.about-me__header h1:after {content:"И ИНТЕРЕСНЫХ";
+                            display: block;
+                            opacity: 0;}
+
+.about-me__header h1:hover:after {opacity: 1;
+                                  text-align: center;
+                                  transition: 3s;}
+
+
+.about-me__content img {border: solid rgba(96, 93, 86, 0) 5px;
+                        margin-bottom:15px;
+                        border-radius: 5%;}
+
+.about-me__content img:hover {border: solid rgba(96, 93, 86, 1) 5px;
+                              transition: 3s;}
+
+.about-me__content_bicycle:after {content:"Я очень люблю велосипеды и все, что с ними связано. Безудержное чувство свободы одалевает тебя,когда ты мчишся с горы на встречу ветру! И в этот момент есть только ты и твой железный конь.";
+                                  opacity: 0;
+                                  width: 100%;
+                                  height: auto;
+                                  }
+
+.about-me__content_food:after {content:"Вкусная и приятная еда,вот,что доставляет удовольствие любому человеку. Я предпочитаю довольно разнообразные блюда,но предпочтение отдаю азиатской кухни. В ней есть,что-то таинственное и глубокое";
+                               opacity: 0;
+                               width: 100%;
+                               height: auto;}
+
+.about-me__content_home:after  {content:"Я люблю свою работу,люблю свое дело,потому что оно доставляет мне удовольствие. По большей части это не только работа,это еще и хобби. А хобби всегда радует нас!";
+                               opacity: 0;
+                               width: 100%;
+                               height: auto;} 
+
+.about-me__content_team:after {content:"Уважаю друзей и людей, с которыми мы занимаемся общим делом. Ценю их время и тот факт,что они готовы тратить это время на общение со мной. Учусь у своих друзей и единомышленников.";
+                               opacity: 0;
+                               width: 100%;
+                               height: auto;}                             
+
+
+.about-me__content_bicycle:hover:after, .about-me__content_food:hover:after, 
+.about-me__content_home:hover:after, .about-me__content_team:hover:after {opacity: 1;
+                                                                          transition: 4s;
+                                                                          text-align: justify;}
+
+
+                                                  /*my-works*/
+
+
+.my-works__header h1 {
+                  margin-bottom: 60px;}
+
+.my-works__content h5 {font-family: "myfont";
+                       font-size: 2.1rem;
+                       color: red;
+                     }
+                                              /* my-works - accordion*/
+
+.flex {display: flex;
+       overflow:hidden; /*скроем тень*/}
+
+.flex a {display: block;  /*Делаем ссылку блочным элементом,задаем ширину и высоту,чтобы можно было кликать в любом месте картинки*/
+         width: 100%;
+         height: 100%;}
+
+.item {height:300px;
+       flex:20%; /* = flex-basis:20%; */
+       transition: flex 300ms ease;
+       box-shadow: 0 0 19px 3px #000; margin: 1px; /* красивости тени */
+       border-radius: 5px;}
+
+
+.item:hover {flex: 0.1 0.1 500px;
+             background-size: 100% 100%}
+
+.img1 { background: url(../my-works-examples/agenstvo/agenstvo.png) 0 0 no-repeat; }
+.img2 { background: url(../my-works-examples/portfolio/portfolio.png) 0 0 no-repeat; }
+.img3 { background: url(../my-works-examples/portfolio-new/portfolio-new.png) 0 0 no-repeat; }
+.img4 { background: url(../my-works-examples/portfolio-old/portfolio-old.png) 0 0 no-repeat; }
+.img5 { background: url(../my-works-examples/tur-agenstvo/tur-agenstvo.png) 0 0 no-repeat; }
+.img6 { background: url(../my-works-examples/dr/dr.png) 0 0 no-repeat; }
+                                                 
+                                                    /*skills*/
+
+
+.skills__header {
+                 margin-bottom: 60px;}
+
+.skills__header h1:hover {color: red;}
+
+.skills__content img {max-width: 100%
+                      height:auto;
+                      display: block;
+                      margin:0 auto;}
+
+.skills__content .skills__content_text h2 {margin-top: 37px;}
+.skills__content .skills__content_text h2:nth-of-type(4) {margin-top: 10px;}
+.skills__content .skills__content_text {width: 265px;
+                                        margin:0 auto;}
+
+.skills__content h2, p {text-align: center;}
+
+
+/*Появляющиеся цифры,можно еще попробовать с помощью after*/
+
+.skills__content_text {position: relative;}
+
+.skills__content_number{ opacity: 0;
+                         position: absolute;
+                         top: 0%;
+                         left: 23%;
+                         width: 251px;
+                         height:251px;}
+
+.skills__content_number p {padding-top: 31%;
+                           padding-left:18%;
+                           font-family: "myfont";
+                           font-size:3.8rem;}
+
+.skills__content_number:hover {opacity: 1;
+                               color: red;
+                               transform: rotate(360deg);
+                               transition: 2s;}
+
+
+
+                                                     /*contacts - contacts form*/
+#contact_form {position: relative;
+               }
+
+.contacts__header p {width: 611px;
+                     margin:0 auto;
+                     margin-top: 35px;
+                     margin-bottom: 35px;
+                     font-family: "myfont";
+                     font-size:1.2rem;}
+
+#contact_form label{font-size: 1.4rem;
+                    margin-bottom: 0rem;
+                   font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+#contact_form input,textarea { width: 350px;
+                              height: 40px;
+                              border-radius: 15px;
+                              border: 2px solid gray;
+                              outline: none;
+                              display: block;
+                              margin: 0 auto;
+                              padding-left: 5px;}
+
+#contact_form textarea {height: 125px;
+                       }
+
+#message  {display: block;
+             width: 345px;
+             height: 435px;
+             position: relative;
+             top:10%;
+             left: 18%;
+             background: rgb(207, 207, 205, 1);
+             padding: 16%;
+             text-align: center;
+             border: 1px solid rgba(96, 93, 88, 1);
+             border-radius: 5%;
+             color: rgba(96, 93, 88, 1); }
+
+#message p {position: relative;
+              top:50%;}
+
+.contacts__form .info {width: 350px;
+                       text-align: center;}
+
+.contacts__form .info h2 {font-weight: bold;
+                          font-size: 1.5rem;
+                          padding-top: 10px;
+                          padding-bottom: 10px;}
+                          
+.contacts__form .info p {font-size: 1.2rem;}
+
+input.button {font-family:Verdana, Arial, Helvetica, sans-serif;
+             color: rgb(117, 116, 113, 1);}
+
+input.button:hover {background: #ffddaa;}
+
+

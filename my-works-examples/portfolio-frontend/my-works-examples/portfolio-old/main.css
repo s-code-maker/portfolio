@@ -1,0 +1,243 @@
+* {margin:0px;
+   padding:0px;
+   }
+
+.container {width:950px;
+            margin:0 auto;}
+
+
+#header {background:#4e8598;
+	     width: 100%;}
+
+.header__logo {display: block;
+	           width: 121px;
+               height: 29px;
+	           margin:0 auto;
+               padding-top: 54px;
+               }
+
+.header__title {width: 594px;
+				height: 64px;
+				text-transform: uppercase;
+				text-align: center;
+				color: #fff;
+				line-height: 38px;
+				letter-spacing: 0.54px;
+	            margin:0 auto;
+	            margin-top: 186px;}
+
+                                                /*Описываем кнопку*/
+
+.button {display: block;
+	     width: 140px;
+	     margin:0 auto;
+	     text-decoration: none;
+         color: #fff;
+         border: 1px solid #fff;
+         border-radius: 25px;
+         padding:19px 32px;
+         font-weight: 700;
+         font-family: Tahoma;}
+
+#header .button {margin-top: 40px;}
+
+                                               /*Описываем стрелочку*/
+
+.header__arrow {display: block;
+                text-align: center;
+                padding-top: 177px;
+                padding-bottom: 58px;}
+
+                                                  /*Вторая секция*/
+
+.about_me__title { color: #2f383b;
+	               text-transform: uppercase; 
+	               padding-top: 80px;
+	               font-weight: 700;
+	               text-align: center;}    /*В контейнере заголовок, он строчный элемент*/
+
+								/*Описываем контейнер с двумя блоками*/
+
+.about_me__info {padding-top: 89px;
+                 }
+     
+                                             /*Первый блок*/
+
+.about_me__mission {float: left;
+                    width: 393px;
+                    height: 350px;
+                    line-height: 24px;
+                    letter-spacing: 0.3px;                    }
+.about_me__mission h3 {font-weight: 700;
+                       line-height: 33px;
+                       text-transform: uppercase;
+                       letter-spacing: 0.44px;
+                       color: #2f383b;}
+
+										/*Описываем палочку*/
+
+.about_me__mission h3:after {content:"";                        
+                             display: block;
+                             background: #4e8598;
+                             width: 72px;
+                             height: 3px;
+                             margin-bottom: 29px;}
+
+                                             /*Второй блок*/
+
+.about_me__merit {float: right;
+                  width: 393px;
+                  height: 350px;
+                                  }
+
+.about_me__merit h3 {color: #2f383b;
+	                 text-transform: uppercase;
+                     letter-spacing: 0.44px;
+                     font-weight: 700;
+                     line-height: 33px;}
+
+.about_me__merit h3:after {content:"";                        
+                     display: block;
+                     background: #4e8598;
+                     width: 72px;
+                     height: 3px;
+                     margin-bottom: 29px;}
+
+                                       /*Оформляем список с картинками и текстом*/
+
+.about_me__merit li {display:inline; }   /*Выравниваем все пункты меню в ряд*/
+
+.block span {height: 50px;               /*Выравниваем текст по центру*/
+             line-height: 50px;
+             margin-left: 15px;
+             color: #4e8598;
+             font-weight: 700;}
+
+
+.block img {vertical-align: middle;}     /*Выравниваем картинку по центру по вертикали*/
+
+.block {margin-bottom: 28px;}            /*Расстояние между блоками*/
+
+.block__text {display: inline;
+	          margin-left: 10px;
+	          font-weight: 400;
+              color: #2f383b;
+              opacity: 0.48;}
+
+
+
+#qw {margin-left: 31px;}                 /*Обратить внимание!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											/*Третья секция*/
+
+.my_benefits__title {color: #2f383b;
+                     font-family: Tahoma;
+	                 font-weight: 700;
+                     line-height: 33px;
+                     text-transform: uppercase;
+	                 text-align: center;
+	                 padding-top: 157px;}
+
+.mi_benefits__items {margin:0 auto;
+	                 margin-top: 68px;
+                     }
+
+.mi_benefits__item {float: left;}
+.mi_benefits__item__digit {width: 75px;
+                           height: 75px;
+                           border: 1px solid #2f383b;
+                           border-radius: 50%;
+                           text-align: center;
+                           height: 75px;
+                           line-height: 75px;
+                           margin:0 auto;
+                           }
+
+.mi_benefits__item__digit:hover {background: #2f383b;}  /*Изменение цвета кружка при наведении мышки*/
+
+
+.mi_benefits__item__digit p {text-transform: uppercase;
+                             font-weight: 400;
+                             font-family: Tahoma;
+                              font-size: 30px;
+                              color: #2f383b;}
+
+.mi_benefits__item__digit p:hover {color: #fff;}        /*Изменение цвета цифры при наведении мышки*/
+
+.mi_benefits__item {width: 190px;
+	                height: 109px;
+	                margin-left: 120px;	         
+	                text-align: center;}
+
+.mi_benefits__item:nth-child(1) {margin-left: 80px;}
+
+.mi_benefits__item__text {margin-top: 18px;
+                          }
+
+.mi_benefits__item__text{font-weight: 700;
+                         color: #2f383b;}
+
+
+
+.my_benefits__contact_me {width: 430px;
+	                      height: 165px;
+	                      margin:0 auto;
+	                      text-align: center;
+	                      margin-top: 64px;}
+
+.my_benefits__contact_me h3 {color: #2f383b;
+                             font-family: Tahoma;
+                             font-weight: 700;
+							 line-height: 33px;
+						   	text-transform: uppercase;
+						     letter-spacing: 0.44px;
+						     padding-bottom: 25px;}
+
+.my_benefits__contact_me p {font-weight: 400;
+                            line-height: 23px;
+                            color: #2f383b;
+                            letter-spacing: 0.28px;
+                            font-family: Tahoma;}	
+
+.my_benefits__contact_me a {background: #2f383b;
+                            margin-top: 27px;
+                            }		
+
+
+                            /*Четвертая секция - footer*/
+
+footer {width: 100%;
+        background: #2f383b;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 75px;}		
+footer li {display: block;
+           color: #fff;}
+footer li:nth-child(1) {float: right;}
+footer li:nth-child(2) {float: left;
+                        }
+footer li:nth-child(3) {float: left;
+                         margin-left: 250px;}	 
+
+
+
+
+
+
+                 

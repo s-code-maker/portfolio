@@ -1,0 +1,583 @@
+*{padding: 0px;
+  margin: 0px;
+  }
+
+  .container {width: 1200px;
+              margin:0 auto;
+              /*border: 1px dotted red;*/}           /* Границы,убрать*/
+
+  .clearfix:after{content:"";                  /* Для элементов с float*/
+                   clear:both;
+                   display: table;}
+
+                                           /* Первая секция*/
+
+  
+
+  .header {width: 100%;} 
+
+  .header_logo {float: left;
+                padding-top:14px;
+                padding-bottom:12px;
+                margin-right: 50px;}
+
+  .header_menu {float: left;
+  	            padding-top: 35px;
+                padding-bottom: 30px;
+                }
+
+  .header_menu li{display: inline;
+                  padding-right: 20px;}
+                 
+
+   .header_menu li a {text-decoration: none;
+                     color: #000000;
+                     font-weight: 700;             /*жирность текста */ 
+                     letter-spacing: 0.28px;}      /*межбуквенное расстояние*/                 
+
+  .header_menu ul:last-child{padding-right:0px;}  /*убираем отступ у крайней лишки*/
+
+  .header_contact {float: right;
+                   padding-top: 14px;
+                   padding-bottom: 19px;
+                   }
+
+  .number {font-family: "Roboto Slab";
+           color: #2f1059;
+           font-weight: 700;
+           line-height: 17px;                /*межстрочное расстояние*/
+           font-size: 21px;
+           margin-bottom: 23px;}
+
+
+.call {
+       text-align: right;}
+
+.call a{border: 1px solid #2f1059;
+       border-radius: 5px;
+       padding:10px 5px 10px 25px;
+       font-family: "Roboto Slab";
+       font-weight: 700;
+       color: #2f1059;
+       text-decoration: none;
+       background:url(Макет/header/call.png)no-repeat 5% 50%;}
+
+@-moz-document url-prefix() {
+
+  	.header_menu li {padding-right: 10px;}
+  	.header_menu li a {font-size: 14px;}
+  	.header_logo {margin-right: 0px;}
+  	.header_logo img {width: 80%;}
+  	.number {font-size: 17px;}
+
+}
+
+                                           /* Вторая секция*/
+
+.record {background: url(Макет/second/background.png) no-repeat;
+         width: 100%;}
+
+.record_title {background: url(Макет/second/cloud.png) no-repeat;
+               text-align: center;
+               margin-top: 8px;
+               margin-bottom:235px;
+               }
+
+.record_title p:first-child {color: #2f1059;
+                             font-family: "Roboto Slab";
+                             font-weight: 300;
+                             line-height: 28px;
+                             font-size: 22px;
+                             padding-top: 43px;
+                             padding-bottom: 23px;}
+
+.record_title span {font-weight: 700;}
+.record_title h1 {color: #2f1059;
+				 font-family: "Roboto Slab";
+			     font-size: 43px;
+				 font-weight: 700;
+				 line-height: 17px;
+				 text-transform: uppercase;
+				 letter-spacing: 0.86px;
+				 padding-bottom: 8px;}
+
+.record_title p:last-child {color: #2f1059;
+                             font-family: "Roboto Slab";
+                             font-weight: 300;
+                             line-height: 28px;
+                             font-size: 22px;
+                             padding-bottom: 38px;}
+
+.record_form {background: url(Макет/second/form_background.png) no-repeat 50% 50%;
+              width: 770px;
+              height: 234.5px;
+              margin:0 auto;
+              text-align: center;
+              border-radius: 5px;
+              }
+
+.record_form_content h3 {color: #fbfafa;
+						font-family: "Roboto Slab";
+						font-size: 24px;
+						font-weight: 700;
+						line-height: 25px;
+						padding-top: 35px;
+					    padding-bottom: 6px;}
+
+.record_form_content p {color: #ffffff;
+						font-family: "Roboto Slab";
+						font-size: 17px;
+						font-weight: 300;
+						line-height: 25px;
+					    padding-bottom: 26px;}
+
+.record_form_content input {outline: none;
+	                        width: 201px;
+						    height: 47px;
+						    border-radius: 5px;
+						    padding-left: 25px;
+						    }
+
+                                       /*Реализация input c картинкой,можно ли как то иначе?*/
+
+.form-name {display: inline-block;}
+.form-tel {display: inline-block;}
+.image {                             /* Позиционируем картинки в input*/
+        width: 15px;                    
+        margin-top:-35px; 
+        margin-left: 5px;}
+
+
+
+
+.record_form_content a {padding:17px 27px;
+						border-radius: 5px;
+						background: #d22828;
+						color: #fff;
+						text-decoration: none;
+						font-family: "Roboto Slab";
+						font-size: 17px;
+						font-weight: 700;
+						line-height: 17px;
+					    }
+
+.record_form_5 {padding-top: 45px;
+	            padding-bottom:12px ;
+                color: #7925ec;
+				font-family: "Roboto Slab";
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 15.3px;
+				width: 452px;
+				height: 25px;
+				margin:0 auto;
+				box-shadow: 0px 21px 57px -35px #000000;
+			    }
+
+.record_form_5 span{font-size: 21px;
+					font-weight: 700;
+				    border:1px solid #7925ec;
+				    padding:1px 4px;}
+
+@-moz-document url-prefix() {
+
+	.record_form_content a {font-size:14px;}
+
+}
+
+
+                                       /*Третья секция*/
+
+.advatages {width: 100%;
+      }
+
+
+.advatages_item {text-align: center;
+                 padding-top: 338px;    
+                 position: relative;
+                }
+
+.advatages_item li {display:inline-block;
+                    width: 153px;
+                    height: 146px;
+                    background: url(Макет/third/circle.png) no-repeat top/cover;
+                    text-align: center;
+                    line-height:146px;
+                    }
+
+.advatages_item li:first-child {top:167px;                
+                                position: absolute;
+                                left:0px;}
+.advatages_item li:nth-child(2) {position: absolute;
+                                 top:100px;
+                                 left: 198px;}
+.advatages_item li:nth-child(3) {position: absolute;
+                                 top:47px;
+                                 left: 410px;}
+.advatages_item li:nth-child(4){position: absolute;
+                                top:47px;
+                                right:410px;}
+.advatages_item li:nth-child(5){position: absolute;
+                                top:100px;
+                                right: 198px;}
+.advatages_item li:last-child {top:167px ;
+                               position: absolute;
+                               right: 0px;}                               
+
+.advatages_item p {display: inline-block;
+	               line-height: normal;
+	               vertical-align: middle;
+                   font-size: 17px;
+                   font-family: "Roboto Slab";}
+
+.advatages_item span {font-weight: 700;}
+ 
+                                        /*Полоска внутри секции*/
+
+.advatages {background: url(Макет/third/stripe.png) no-repeat bottom; /*Располагаем фон внизу контейнера*/
+                   }
+
+.advatages_strip {padding-top: 71px;        /* Расширяем контейнер с помощью внутренних отступов*/
+                  padding-bottom: 0px;
+                  text-align: center;
+                  font-family: "Roboto Slab";
+                  color: #ffffff;
+                  }
+
+.advatages_strip_title span {font-weight: 700;
+                       font-size: 30px;}
+
+.advatages_strip_title {line-height: 38px;}
+.advatages_strip_title p {font-weight: 400;
+                          font-size: 20px;
+                          font-family: "Roboto Slab";}
+.advatages_strip_title img {padding-right: 7px;
+                            vertical-align: middle;}
+
+                                          /*Делаю надпись*/
+
+.advatages_strip_circle {position: relative;
+	                     border-radius: 100%; /*Делаем круг,он приплюснутый,исходя из его содержимого*/
+	                     background:;
+	                     width: 9%;
+	                     padding-top: 9%;
+                         margin:0 auto;
+                         margin-top: 10px;
+                         margin-left: 533px;
+							}
+
+							                  
+
+.advatages_strip_circle b {position: absolute; 
+	                       left: 50%;  /* все буквы собрать в одну точку по середин,отступ слева круга на половину */
+                           width: 0;  /* убрать отступ */
+                           bottom: 50%;
+                           transform-origin: 0% 100%;
+                           padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
+                           font-size: 12px;
+                           font-family: "Adelle Cyrillic";}
+                           
+
+.advatages_strip_circle b:nth-child(1) {transform: rotate(270deg);}
+.advatages_strip_circle b:nth-child(2) {transform: rotate(277deg);}
+.advatages_strip_circle b:nth-child(3) {transform: rotate(284deg);}
+.advatages_strip_circle b:nth-child(4) {transform: rotate(296deg);}
+.advatages_strip_circle b:nth-child(5) {transform: rotate(303deg);}
+.advatages_strip_circle b:nth-child(6) {transform: rotate(310deg);}
+.advatages_strip_circle b:nth-child(7) {transform: rotate(317deg);}
+.advatages_strip_circle b:nth-child(8) {transform: rotate(324deg);}
+.advatages_strip_circle b:nth-child(9) {transform: rotate(331deg);}
+.advatages_strip_circle b:nth-child(10) {transform: rotate(338deg);}
+.advatages_strip_circle b:nth-child(11) {transform: rotate(345deg);}
+.advatages_strip_circle b:nth-child(12) {transform: rotate(352deg);}
+.advatages_strip_circle b:nth-child(13) {transform: rotate(367deg);}
+.advatages_strip_circle b:nth-child(14) {transform: rotate(374deg);}
+.advatages_strip_circle b:nth-child(15) {transform: rotate(381deg);}
+.advatages_strip_circle b:nth-child(16) {transform: rotate(388deg);}
+.advatages_strip_circle b:nth-child(17) {transform: rotate(395deg);}
+.advatages_strip_circle b:nth-child(18) {transform: rotate(402deg);}
+.advatages_strip_circle b:nth-child(19) {transform: rotate(409deg);}
+.advatages_strip_circle b:nth-child(20) {transform: rotate(416deg);}
+.advatages_strip_circle b:nth-child(21) {transform: rotate(423deg);}
+.advatages_strip_circle b:nth-child(22) {transform: rotate(430deg);}
+.advatages_strip_circle b:nth-child(23) {transform: rotate(437deg);}
+
+
+
+
+
+
+
+                                      /* Четвертая секция*/
+
+.location_house {margin-top: 52px;
+                 text-align: center;
+                 margin-bottom:88px;}
+.location_house_title h2 {
+                          font-family: "Roboto Slab";
+                          line-height: 44px;
+                          font-weight: 700;
+                          letter-spacing: 0.74px;}
+
+.location_house_title p {font-weight: 300;
+                         line-height: 44px;
+                         font-family: "Roboto Slab";
+                         }
+
+.location_house_item {float: left;
+                      width: 400px;
+                     }
+
+.location_house_item p {font-weight: 300;
+                           font-family: "Roboto Slab";
+                           line-height: 23px;
+                           font-size: 15px;}
+.location_house_item span {font-weight: 700;
+                           font-size: 21px;}
+
+.location_house_item:nth-of-type(2) {margin-top:25px;}
+
+
+                                             /*Пятая секция*/
+
+.infrastructure {text-align: center;
+                 background: url(Макет/fifth/background.png) no-repeat;}
+
+
+.infrastructure_title {padding-top: 75px;
+	                   padding-bottom: 69px;}
+
+.infrastructure_items {width: 910px;
+                       margin:0 auto;
+                       }
+
+.infrastructure_item {width: 300px;
+                      float: left;
+                      
+                      color: #000000;
+					  font-family: "Roboto Slab";
+					  font-size: 16px;
+				      font-weight: 300;
+					  line-height: 37px;
+					  letter-spacing: 0.32px;
+					  text-align: left;
+					  }
+
+
+
+.infrastructure_item p {border-bottom: 1px #dae8da solid;
+                         }
+.infrastructure_item span {font-size: 19px;
+							font-weight: 700;
+							line-height: 44px;
+							letter-spacing: 0.38px;
+							display: inline-block;
+							
+						    border-bottom:none;}
+
+.infrastructure_item span:after { content:"";
+                                 display: block;
+                                  width: 336px;
+                                 height: 37px;
+                                 opacity: 0.62;
+	                             background: url(Макет/fifth/shadow.png) no-repeat top/cover;}
+
+.infrastructure_strip_items {
+                             margin-top:90px;
+                             padding-bottom: 30px;}
+
+.infrastructure_strip_item {display: inline-block;
+                            margin-right: 15px;
+                            height: 59px;
+                            width: 310px;
+                            line-height: 59px;
+                            text-align: left;
+                           }
+
+.infrastructure_strip_item p {line-height: normal;
+                              display: inline-block;
+                              vertical-align: middle;
+                              font-family: "Roboto Slab";
+							  font-weight: 300;
+							  color: #fbfafa;}
+
+.infrastructure_strip_item span {font-weight: 700;}
+
+.infrastructure_strip_item:nth-child(3) {margin-right: 0px;}                            
+
+.infrastructure_strip_item img {float: left;
+                                margin-right: 10px;}
+
+@-moz-document url-prefix() {
+
+	.infrastructure_item span {
+    font-size: 17px;}
+    .infrastructure_item {line-height: 27px;}
+    .infrastructure_strip_item p {font-size: 12px;}
+}
+                                      
+                                      /*Шестая секция*/
+
+.house_construction {margin-top: 84px;
+                     text-align: center;
+                     }
+
+.house_construction_title {margin-bottom: 51px;}
+
+.house_construction_items {height: 370px;
+                           margin-bottom:72px; 
+                           }
+
+.house_construction_item{display: inline-block;
+                         margin-right: 70px;
+                         vertical-align: top;
+                        }
+
+.house_construction_item:nth-child(3){margin-right: 0px;}
+
+.house_construction_item {width: 300px;
+                          height: 297px;
+                          text-align: left;
+                          padding-bottom:72px; }
+
+.house_construction_item h3 {color: #000000;
+							font-family: "Roboto Slab";
+							font-size: 22px;
+							font-weight: 700;
+							line-height: 44px;
+						    text-align: center;}
+       
+.house_construction_item p {color: #000000;
+							font-family: "Roboto Slab";
+							font-size: 15px;
+							font-weight: 300;
+							line-height: 22px
+						    }
+.house_construction_item img {padding-bottom: 20px;}
+
+@-moz-document url-prefix() {
+
+ .house_construction_item h3 {font-size: 17px;}
+
+
+}
+
+ 
+                                             /*Седьмая секция*/
+
+.equipment{background: url(Макет/seven/background.png) no-repeat;
+           padding-bottom:68px;}
+
+.equipment_title {color: #ffffff;
+				 font-family: "Roboto Slab";
+				 font-weight: 700;
+				 line-height: 44px;
+				 text-transform: uppercase;
+				 text-align: center;
+				 padding-top: 72px;
+				 padding-bottom: 53px;}
+
+
+.equipment_item {float: left;
+                 margin-left: 50px;}
+
+.equipment_item:nth-child(1) {margin-left: 120px;}
+
+.equipment_item li {font-family: "Roboto Slab";
+					font-weight: 300;
+					letter-spacing: 0.32px;
+				    font-size: 16px;
+				    line-height: 37px;
+				    color: #ffffff;}
+
+.equipment_text {color: #ffffff;
+			    font-family: "Roboto Slab";
+			    font-size: 19px;
+		    	font-weight: 700;
+			    line-height: 44px;
+			    letter-spacing: 0.38px;
+			    margin-left: 120px;}
+
+.equipment_item li {list-style:none;   /*Убираем стандартный маркер*/
+                    background: url(Макет/seven/img.png) no-repeat 0% 50%;
+                    padding-left: 20px;
+                    }
+
+@-moz-document url-prefix() {
+.equipment_item li {font-size: 12px;}
+}
+                                     /* Восьмая секция*/
+
+
+.documents {background: url(Макет/eighth/background.png) no-repeat top/cover; 
+            }
+
+ .documents_title {text-align: center;
+                   padding-top: 83px;
+                   padding-bottom: 55px;}
+
+.documents_title h2 {color: #000000;
+					font-family: "Roboto Slab";
+					font-size: 37px;
+					font-weight: 700;
+					line-height: 44px;
+					text-transform: uppercase;
+				    }
+
+.documents_title p {color: #000000;
+					font-family: "Roboto Slab";
+					font-size: 21px;
+					font-weight: 300;
+					line-height: 44px;}
+
+.documents_photo img {margin-left:60px;}
+
+.documents_photo {padding-bottom: 78px;}
+
+                                                 /*  Футер*/
+
+.footer {background:#080808;
+         color: #fbfafa;
+         }
+
+ .footer_logo {float: left;
+               color: #fbfafa;
+               padding-bottom: 20px;
+               padding-top: 20px; }
+
+ .footer_pravo {float: left;
+                margin-left: 69px;
+                padding-top: 39px;}
+
+.footer_pravo p:last-child{text-decoration: underline;}
+
+ .footer_address {float: left;
+                  margin-left: 100px;
+                  padding-top: 23px;
+                  padding-left: 20px;
+                  background: url(Макет/footer/gps.png)no-repeat 0% 30%;
+                                 }
+
+ .footer_address span {font-weight: 700;
+                       line-height: 18px;}
+
+ .footer_address {line-height: 14px;}
+ .footer_address p {padding-top: 5px;
+                    padding-bottom: 5px;}
+
+ .footer_contact {float: right;
+                  padding-top: 26px;}
+
+ .footer_contact .number {color: #fbfafa;}
+ .footer_contact .call a{color: #fbfafa;
+                         border: #fbfafa solid 1px;
+                         background:url(Макет/footer/call_footer.png)no-repeat 5% 50%;}
+
+@-moz-document url-prefix() {
+
+.footer_pravo {margin-left: 10px;}
+
+}
+
+
+

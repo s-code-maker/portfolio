@@ -1,0 +1,144 @@
+*{margin: 0px;
+  padding:0px;}
+
+ body {width: 1280px;                                        /*Задаем ширину странице*/
+       margin: 0 auto;}                                      /*Выравниваем страницу по центру*/
+
+ header {background: #22a2ec;
+         height: 86px;                                       /*Можно адать с помощью padding*/
+         }
+
+.logo {font-weight: 800;                                     /*Жирность шрифта*/
+	   color: #ffffff;
+	   float:left;                                           /*Смещаем логотип в левый край*/
+       margin: 35px 123px 35px 45px;}                        /*Даем отступы логотипу со всех сторон*/
+
+     
+
+nav {float: left;                                            /*Смещаем навигационное меню в левую сторону*/
+	 margin-top:36px;                                        /*Отступ навигационного меню от верхнего края*/
+     }
+
+nav li {margin-left: 28px;
+	    display: inline-block;}                              /*Делаем лишки строчно-блочными элементамии тем самым выстраиваем их в ряд*/
+nav li a {font-weight: 800;
+	      color: white;
+	      }
+
+
+
+.tel {font-weight: 800;
+	  color: white;
+	  margin-top:36px;  
+	  margin-right: 47px;
+	  float: right;}                                         /*Располагаем телефон в правом крае*/
+
+
+	                                                  /*Вторая секция*/
+
+h1 {margin-top: 55px;
+    margin-left: 45px;
+    margin-bottom: 32px;}
+
+#cards li {display: inline-block;
+           width: 358px;
+           height: 246px;
+           margin-left: 57px;}
+
+#cards li h4 {margin-top:31px;
+              margin-left: 29px;}
+#cards li p {margin: 20px 36px 32px 30px;}
+
+#cards li:nth-child(1) {margin-left: 45px;                                 /*Применяем отступы и границы для первого элемента*/
+                        border: 1px solid #d6d6d6;}
+
+#cards li:nth-child(2) {border: 5px solid #d6d6d6;}                        /*Применяем отступы и границы для второго элемента*/
+
+#cards li:nth-child(3) {box-shadow: 0 0 29px rgba(14, 14, 14, 0.4);         /*Применяем отступы и границы для третьего элемента*/
+                        border-radius: 5px;}
+
+
+
+
+
+
+                                                         /*Третья секция*/
+
+h2 {margin-top: 55px;
+    margin-left: 45px;}
+
+.form-sent {margin-top: 36px;
+            margin-left:45px;
+            float: left;}
+
+.form-sent input {width: 239px;
+                  height: 46px;
+                  border: 1px solid #d6d6d6;
+                  background-color: #ffffff;
+                  margin-bottom:12px;
+                  padding-left: 24px; }
+
+.form-sent textarea {padding-left: 23px;
+                     padding-top: 17px;}
+
+
+button { font-weight: 800;
+	     padding: 16px 50px 16px 50px;
+         background: #ebce0d;
+         margin-bottom: 22px;
+         margin-top: 23px;}
+
+.slip {float: right;
+	   width: 771px;
+       height: 301px;
+       border-radius: 10px;
+       background-color: #184c6b;}
+
+
+.title {float: left;
+        margin-top:43px;
+        margin-left: 39px;}
+.title h3 {color: #c0ddee;
+          margin-bottom: 23px;}
+.title p {width: 317px;
+		 height: 168px;
+ 		 color: #c0ddee;
+ 		 line-height: 22px;}
+
+
+.image {float: right;
+        margin-top: 87px;
+        margin-right: 44px;}
+.image p {margin-top: 16px;
+          color: white;}
+
+
+                                                                 /*Футер*/
+
+footer {margin-top: 41px;
+	    height: 71px;
+        background-color: #22a2ec;}
+
+
+footer li {display: inline-block;}                           /*Выстраиваем элементы футера в одну линию*/
+footer li:nth-child(1) {margin:29px 47px; color: white;      /*Применяем стили к первому элементу футера*/
+                        font-weight: 800;}                   /*Жирность текста*/
+
+
+.rectangle, .oval, .text {color: white;                       /*Применяем стили к элементам футера*/
+       				     border:1px solid white;
+           				 padding:10px 15px;
+           				 border-radius: 5px;
+           				 font-weight: 800;
+          			     text-decoration: none;}
+
+.oval {border-radius: 25px;
+       margin-left: 65px;
+       margin-right: 65px;}
+
+.text {color: #22a2ec;
+       background: white;}
+.yes {color: white;
+      margin-left: 50px;}
+
+

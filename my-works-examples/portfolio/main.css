@@ -1,0 +1,369 @@
+*{padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  max-width: 100%;}  /*Чтобы не было белой полосы справа при использовании мобильной версии*/
+
+                                                   /*Подключаю свои шрифты*/
+
+  @font-face {                      
+  font-family:'Natasha';                /*Имя шрифта*/
+	    src: url('fonts/Natasha/Natasha.eot');      /*Местоположение шрифта*/
+	   /* IE9 Compat Modes */
+	  
+	   src: url('fonts/Natasha/Natasha.eot?#iefix') format('embedded-opentype'), 
+	   /* IE6-IE8 */
+  
+       url('fonts/Natasha/Natasha.woff2') format('woff2'),  
+       /* Super Modern Browsers */
+       
+       url('fonts/Natasha/Natasha.woff') format('woff'), 
+       /* Pretty Modern Browsers */
+       
+       url('fonts/Natasha/Natasha.ttf')  format('truetype'), 
+       /* Safari, Android, iOS */
+       
+       url('fonts/Natasha/Natasha.svg#svgFontName')format('svg');
+       /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-100';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-100Italic';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.svg#MuseoSansCyrl-100Italic') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-100Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-300Italic';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.svg#MuseoSansCyrl-300Italic') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-300Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+font-face {
+  font-family: 'MuseoSansCyrl-900';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-900Italic';
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.eot');
+  src: url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.svg#MuseoSansCyrl-900Italic') format('svg'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.woff') format('woff'),
+       url('fonts/MuseoSansCyrl/MuseoSansCyrl-900Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.clearfix:after{content:"";                  
+                clear:both;
+                display: table;}
+
+.header {background: url(images/header/background.png) no-repeat top/cover;
+          color: #ffffff;
+          }
+
+.container {width: 970px;
+            margin:0 auto;}
+
+.header__logo {float: left;
+               text-transform: uppercase;
+                margin-top:56px;}
+
+.header__logo p {font-family: "MuseoSansCyrl-100";
+                letter-spacing: 2.04px;
+                 }
+
+.header__logo span {font-family: "MuseoSansCyrl-900";
+                    letter-spacing: 2.04px;}
+.header__nav {float: left;}
+.header__nav li {display: inline-block;
+                padding-top: 56px;
+                margin-left: 50px;
+                
+                }
+.header__nav li a {text-decoration: none;
+	               text-transform: uppercase;
+                   font-family: "MuseoSansCyrl-900";
+                   color: #ffffff;
+				   font-size: 15px;
+				   font-weight: 400;
+				   letter-spacing: 1.8px; }
+
+
+.header__nav li:first-child {margin-left: 177px;}
+
+.header__contacts {float: right;
+                   margin-top: 56px;
+                   letter-spacing: 1.56px;
+                   font-family: "MuseoSansCyrl-300";
+                   }
+.header__contacts:after{width: 148px;
+                        height: 1px;
+                        background: #fff;
+                        margin-top: 3px;}
+
+.header__title {text-align: center;
+                padding-top:365px;
+                text-transform: uppercase;
+                line-height: 55px;}
+
+.header__title h1 {font-family: Natasha;
+                   letter-spacing: 5.88px;
+                   font-size: 49px;}
+.header__title p {font-family: "MuseoSansCyrl-100";
+				  font-size: 29px;
+			      letter-spacing: 3.48px;}
+.header__arrow { text-align: center;
+	             margin-top: 265px;
+                 font-size: 40px;
+                 font-weight: 100;
+                 padding-bottom: 82px;}
+
+                                            /*Обо мне*/
+h2  {text-transform: uppercase;
+     letter-spacing: 4.44px;
+     line-height: 55px;
+     font-family: Natasha;
+     font-size: 37px;
+     color: #22241b;}
+
+h3 {opacity: 0.66;
+	color: #22241b;
+	font-family: Natasha;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.64px;
+						  }
+
+.about-me__title h2{padding-top:86px;
+              
+                  padding-bottom: 76px;}
+
+.about-me___background {width: 432px;
+                        height: 468px;
+                        float: left;}
+
+.about-me___background h3 {
+						   padding-bottom: 46px;}
+
+.about-me___background p {color: #22241b;
+						  font-family: "MuseoSansCyrl-300";
+						  font-size: 15px;
+						  font-weight: 400;
+					      line-height: 27px;
+						  letter-spacing: 0.3px;}
+
+.about-me__service-and-communication {width: 462px;
+                                      height: 465px;
+                                      float: right;}
+
+.about-me__service {width: 462px;
+                    height:212px;
+                     text-align: left;}
+
+.about-me__service h3 {
+					   padding-bottom: 47px;}
+
+.about-me__service p {background: url(images/about-me/rhombus.png) no-repeat top/cover;
+                      width: 105px;
+                      height: 105px;
+                      line-height: 105px;}
+
+.about-me__service .item {float: left;
+                          margin-left:55px;
+                          text-align: center;
+                          }
+
+.about-me__service .item:nth-of-type(1) {margin-left: 17px;}
+
+.about-me__service .item span {color: #22241b;
+								font-family: "MuseoSansCyrl-100";
+								font-size: 12px;
+								font-weight: 400;
+								line-height: 18px;
+								text-transform: uppercase;
+								letter-spacing: 0.24px;
+							    display: block;
+							    padding-top: 25px;}
+
+.about-me__communication h3 {padding-top: 68px;}
+
+.contacts {padding-top: 38px;
+           float: left;}
+.contacts p {color: #204d15;
+			font-family: "MuseoSansCyrl-300";
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 1.68px;
+		    margin-top: 16px;}
+
+.contacts p:after{content:"";
+                  display: block;
+                  width: 166px;
+				  height: 1px;
+			      opacity: 0.29; 
+			      background: #becbbb;
+			      margin-top: 3px;}
+
+.logo {float: right;
+       width: 255px;
+       height:64px;
+       margin-top: 55px; }
+
+.logo img {float: left;}
+
+.logo p {opacity: 0.72;
+		color: #22241b;
+		font-family: "MuseoSansCyrl-300";
+		font-size: 14px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 64px;
+		letter-spacing: 0.28px;
+	    padding-left: 82px;} /*Так как за счет применения float картинка вышла из потока и ее размеры не учитываются*/
+
+
+
+
+                                                    /*skills*/
+
+
+.skills__title {padding-top: 97px;
+                padding-bottom: 62px;}
+
+.skills__items li    {width: 197px;
+                      height: 61px;
+                      margin-left: 41px;
+                      }
+
+.skills__items li:first-child {margin-left: 0px;
+                               width: 207px;}
+
+.skills__items li {display: inline-block;}
+
+.skills__items li p {width: 61px;
+	                 height: 61px;
+	                 text-align: center;
+	                 line-height: 61px;
+	                 background:url(images/skills/circle.png) no-repeat top/cover; 
+	                 float: left;
+	                 }
+
+.skills__items li span {opacity: 0.89;
+						color: #22241b;
+						font-family: "MuseoSansCyrl-900";
+						font-size: 15px;
+						font-weight: 400;
+						line-height: 55px;
+						text-transform: uppercase;
+						letter-spacing: 1.8px;
+					    padding-left: 27px;}
+
+					                       	/*Works*/
+
+.works__title {padding-top: 83px;
+               padding-bottom: 59px;}
+
+.works__image {float: left;
+	           position: relative;       /*Задаем позиционирование,от этого блока будет отталкиваться появляющейся текст при наведении*/
+	           width: 300px;
+	           height: 299px;
+	           }
+
+.works__image {margin-left: 17px;}
+.works__image:nth-child(1) {margin-left: 0px;}
+
+.caption {width: 300px;                                /*Стилизуем блок с надписью и позиционируем его относительно блока с картинкой*/
+	      height: 299px;
+	      position: absolute;
+          top:0%;
+          left:0%;
+          text-align: center;
+          padding-top: 130px;
+          opacity: 0;}                                 /*Прозрачно*/
+
+.caption:hover {opacity: 1;                           /*Не прозрачно при наведении*/
+	            transition: all ease 0.5s;            /*Плавность*/ 
+                background: rgba(0, 0, 0, 0.56);      /*Полупрорачный фон*/
+                }
+
+.caption a {text-decoration: none;                     /*Убераем подчеркивание*/
+            }
+
+.caption .title {color: #ffffff;                        /*Стилизуем блог*/
+				font-family: "MuseoSansCyrl-900";
+				font-size: 15px;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.3px;
+			    }
+
+.caption .info {color: #ffffff;                      /*Стилизуем блог*/
+				font-family: "MuseoSansCyrl-300";
+				font-size: 13px;
+				font-weight: 400;
+				letter-spacing: 0.26px;
+			    }
+
+.caption .info:after {content:"";            /*Линия после слова Смотреть*/
+             display: block;
+             width: 61px;
+			 height: 1px;
+			 background: #868788;
+			 margin:0 auto;
+			 opacity: 0.46;}
+
+                                            /*footer*/
+
+
+.footer {padding-top: 100px;
+		opacity: 0.66;
+		color: #22241b;
+		font-family: "MuseoSansCyrl-300";
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 55px;
+		text-transform: uppercase;
+		letter-spacing: 1.54px;}
+
+

@@ -1,0 +1,332 @@
+                        @media screen and (max-width:1200px) {
+
+                                            /*Главная страница*/
+
+.contacts i {margin-left: 35px;}
+
+                                            /*О компании*/
+
+
+
+}
+
+
+
+                         @media screen and (max-width:992px)  /*Контейнер в бутстрапе 720px*/
+{
+
+                                            /*Главная страница*/
+
+.header__title h1 {
+    font-size: 4.182rem;}
+
+.header__title span {
+    font-size: 2.636rem;}
+
+.advantages__item{
+    width: 100%;
+    margin-bottom: 33px;}
+
+.advantages__items {margin-bottom: 5rem;}
+
+.realty-and-transport__title h2 {
+           line-height: 4.063rem;}
+
+.comments__block {
+    width: 80%;}
+
+.comments__photo img {
+    margin-right: 15px;}
+
+.comments__text {width: 530px;}
+
+.comments__arrow_right i {
+    right: 7%;}
+
+.comments__arrow_left i {
+    left: 7%;}
+
+.circle1 {left: 28%;}
+.circle2 {left:36%;}
+
+.contacts i {
+    margin-left: -12px;}
+
+                                                 /*О компании*/
+
+.contacts-block {
+    margin-bottom: 87px;
+    margin-left: -169px;}
+
+.about-block__title {
+    font-size: 1.063rem;}
+
+.people .item__first {
+    width: 72%;
+    margin-left: 150px;}
+
+.people .item__second {width: 72%;}
+
+.about-block__title {font-size: 1rem;}
+
+.line__one .item__first {
+    padding-right: 0px;
+    line-height: 2.545rem;
+    font-size: 2.545rem;
+    letter-spacing: 0.355rem;}
+
+.line__one .item__first p {
+    font-size: 1.04rem;
+    line-height: 2.545rem;
+    letter-spacing: 0.120rem;
+    padding-top: 13px;}
+
+.line__one .item__second {margin-top: 22px;}
+
+.line__one .item__third {
+    font-size: 2.327rem;
+    letter-spacing: 0rem;
+    line-height: 2.741rem;
+    padding-left: 0px;}
+
+.line__one .item__third p {
+    letter-spacing: 0.27rem;
+    line-height: 3.133rem;
+    font-size: 2.127rem;}
+
+
+
+                                               /*Контакты*/
+
+.contacts__block_info .item {width: 320px;
+                             margin: 52px 30px 0px 142px;}
+.contacts__block_info .text {width: 263px;}
+
+                                           /*Недвижимость и переезд*/
+
+.realty-block__title {
+    width: 48%;
+    margin: 0 auto;}
+.realty-block__item {
+    width: 90%;}
+
+.contacts-block {box-shadow: none;}
+                                
+
+}
+
+
+                       @media screen and (max-width:768px)  /*Контейнер в бутстрапе 540px*/
+
+                                     
+                                     /*Главная страница*/
+
+
+{
+
+.header__title h1 {
+    font-size: 2.182rem;
+    letter-spacing: 1.764rem;}
+
+.header__title span {
+    font-size: 1.636rem;}
+
+.advantages__title h2 {
+    line-height: 3.545rem;}
+
+.advantages__item h3 {
+    font-size: 2.25rem;}
+
+.advantages__item p {
+    font-size: 2.063rem;
+    line-height: 2.375rem;}
+
+.move__title h2 {
+    line-height: 3.063rem;}
+
+.move__text {
+    width: 400px;
+    height: 175px;}
+
+.move__answer p {
+    width: 65%;
+    margin: 0 auto;}
+
+.move {
+    background: #2b4458;}
+
+.move__arrow_first i {
+    top: -6%;}
+
+.move__arrow_second i {
+    top: 93%;}
+
+.first-text {
+    width: 80%;
+    height: 80%;}
+
+.last-text {
+    width: 80%;}
+
+.ball {
+    top: 52%;
+    left:44% }
+
+.circle1 {
+    left: 25%;}
+
+.circle2 {
+    left: 33%;}
+
+.comments__title h2 {
+    line-height: 3.063rem;}
+
+.footer__text li:last-child {
+    display: none;}
+
+.footer__text li:first-child {
+    padding-left: 140px;}
+
+.comments__arrow_left i{display: none;}
+.comments__arrow_right i{display: none;}
+.comments__photo img {float: none;}
+.comments__block {height: 350px;}
+.comments__text p span:nth-of-type(1) {display: block;
+                                       padding-left: 26%;}
+.comments__text p span:nth-of-type(2) {display: block;
+                                       padding-left: 29%;}
+
+.comments__text p span:nth-of-type(3)  {display:block;
+										padding-left: 29%;}
+									
+.comments__text p:nth-of-type(2) {
+								    width: 56%;
+								    text-align: center;
+								    margin-left: 11%;}
+
+                                        /*О компании*/
+
+.about-block__title {font-size: 1.4rem;}
+.line__one .item__first {padding-right: 200px;}
+.line__one .item__second {
+    margin-top: 10px;
+    margin-right: 19%;}
+.line__one .item__third {
+    margin-right: 20%;
+    padding-top: 2%;}
+
+.people .item__first {
+    width: 50%;
+    margin-left: 165px;}
+
+.people .item__second {
+    width: 50%;
+    margin-left: 165px;
+    margin-top: 5%;}
+
+
+                                           /* Контакты*/
+
+.contacts-block {box-shadow: none;
+                 height: 100%}
+.contacts-block__title {
+    font-size: 1.99rem;
+    line-height: 2.438rem;}
+
+.contacts__block_info .item {
+    width: 320px;
+    margin: 0px 50px 10px 260px;}
+
+.contacts__block_info img {
+    padding-top: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    float: none;}
+
+.contacts__block_info .text {width: 100%;}
+.contacts__block_info .text h2 {
+    line-height: 1.75rem;
+    text-align: center;
+    padding-bottom: 5%;}
+
+.contacts__block_info .text p {
+    line-height: 2.5rem;
+    display: block;
+    text-align: center;}
+
+.contacts__block_info .item:nth-of-type(2) {margin-top: 12%;}
+.contacts .contacts-block__form {
+    margin-left: 21%;
+    margin-top: 5%;}
+}
+
+                                 /*Недвижимость и переезд*/
+.realty-block__item .text {text-align: center;}
+.realty-block__item {display: flex;
+                     flex-flow: wrap;}
+.realty-block__item .img_pack {order: 1;}
+.realty-block__item .text {order: 2;}
+.img_house {padding-bottom: 150px;}
+.img_pack {padding-top: 300px;}
+
+
+
+
+                              @media screen and (max-width:575px){
+
+                                      /*Главная страница*/
+
+.footer__text li:first-child {
+    padding-left: 0px;}
+
+.comments__photo img {
+    margin-right: -30px;}
+
+.about-block__title {
+    font-size: 18px;
+    width: 439px;
+    height: 117px;
+    line-height: 25px;}
+
+
+                                          /*О компнии*/
+
+.line__one .item__first {padding-top: 15%;}
+.people .item__first {
+    width: 45%;
+    margin-left: 162px;}
+.people .item__second {
+    width: 45%;
+    margin-left: 162px;}
+
+.form__input {padding: 20px 200px 20px 30px;}
+.form__input_submit {padding: 15px 110px 15px 110px;}
+.question__title h2 {
+    color: #ffffff;
+    font-size: 3.625rem;}
+.question__title p {font-size: 1.713rem;}
+
+                                          /*Контакты*/
+
+.contacts__block_info .item {margin: 0px 50px 10px 230px;}
+.contacts .contacts-block__form {margin-left: 19%;}
+
+
+                                     /*Недвижимость и переезд*/
+
+
+.contacts__header .header__title h1 {font-size: 2.188rem;}
+.realty-block__title {width: 47%;
+                      margin: 0 auto;}
+
+
+.img_pack {width: 100%;}
+
+.realty-block__item {display: flex;
+                     flex-flow: wrap;}
+.realty-block__item .img_pack {order: 1;}
+.realty-block__item .text {order: 2;}
+.img_house {padding-bottom: 150px;}
+.img_pack {padding-top: 300px;}
+}
