@@ -1,0 +1,181 @@
+/* ------ Общие стили
+-----------------------------------------------*/
+
+body {
+font-family:Arial, Helvetica, sans-serif;
+background:#f1f1f1;
+font-size:11px;
+}
+
+.pd{
+padding:10px;
+background:#B0AFAF;
+float:left;
+clear:both;
+width:100%;
+margin-bottom:10px;
+font-weight: bold;
+}
+
+.code_sample{
+float:left;
+}
+
+/* ------ Стили для mobilyslider
+-----------------------------------------------*/
+
+#content {
+width:800px;
+margin:100px auto 0;
+}
+
+.slider {
+float:none;
+width:800px;
+height:350px;
+position:relative;
+padding-bottom:26px;
+background:url(../gfx/bottom_shadow.png) no-repeat bottom center;
+display: block;
+margin: 0 auto;}
+
+ @media (max-width: 768px) { 
+
+    .slider {
+		    width: 370px;
+		    height: 245px;}
+
+ }
+
+  @media (max-width: 400px) { 
+
+    .slider {
+		    width: 330px;
+		    height: 245px;}
+
+ }
+
+.sliderContent {
+float:left;
+width:800px;
+height:350px;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+
+ @media (max-width: 768px) { 
+
+.sliderContent {
+    width: 370px;
+    height: 260px;}
+
+}
+
+ @media (max-width: 400px) { 
+
+.sliderContent {
+    width: 330px;
+    height: 260px;}
+
+}
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(../gfx/prev_next.png);
+width:42px;
+height:42px;
+position:absolute;
+top:50%;
+margin-top:-34px;
+}
+
+.prev {
+background-position:0 0;
+left:15px;
+}
+
+.prev:hover {
+background-position:0 -44px;
+}
+
+.next {
+right:15px;
+background-position:-44px 0;
+}
+
+@media  (max-width: 992px) {
+
+	.next {right: 40px;} 
+}
+
+ @media (max-width: 768px) { 
+
+ 	.next {right: 15px;} 
+
+} 	
+
+.next:hover {
+background-position:-44px -44px;
+}
+
+.sliderContent .item {
+position:absolute;
+width:800px;
+height:350px;
+background:#fff;
+}
+
+@media (max-width: 768px) {
+
+.sliderContent .item {width: 100%;}
+
+}
+
+.sliderBullets {
+position:absolute;
+bottom:0;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+
+@media (max-width: 400px) {
+
+.sliderBullets {
+bottom:25px;
+}
+
+}
+
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:5px;
+width:10px;
+height:11px;
+background:url(../gfx/bullets.png) no-repeat;
+}
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color:#fff;
+}
+
+a img {
+border:none;
+}
+
+img {width: 100%;}

@@ -1,6 +1,7 @@
 *{padding: 0px;
   margin:  0px;
-  font-family: 'Montserrat', sans-serif;}
+  font-family: 'Montserrat', sans-serif;
+  transition: 1.5s;}
 
 
 .container {margin: 0 auto;
@@ -401,6 +402,8 @@
                   justify-content: space-between;
                   padding-top: 50px;}
 
+.works__examples strong {color: yellow;}
+
 .sample img{max-width: 360px;
             height: 200px;
             border-radius: 5px;}
@@ -411,8 +414,9 @@
           				  transition: 0.5s;
                     transform: scale(1.1);}
 
+
 .sample {width: 360px;
-	     margin:10px;
+	       margin:10px;
          margin-bottom: 50px;
          }
 

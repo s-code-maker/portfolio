@@ -40,6 +40,10 @@
 .textarea textarea {margin-right: 20px;}
 
 .message h3 {font-size: 18px;}
+
+.education {
+    padding-bottom: 0px;
+}
   	
 }
                                            @media screen and (max-width:859px){

@@ -1,0 +1,124 @@
+@media  (max-width: 1200px) { 
+
+	.container, .about-coffee {width: 915px;}
+
+ }
+
+ @media  (max-width: 992px) { 
+
+	.container, .about-coffee {width: 650px;}
+
+	.header__nav_logo {font-size: 18px;}
+
+	.header__nav_menu ul li a {
+							    font-size: 12px;
+							    margin-right: 12px;}
+
+	.header__title h1 {font-size: 30px;}
+
+	.header__title p {font-size: 16px;}
+
+	.header__title a {font-size: 10px;}
+
+	.about-coffee__description_item {max-width: 230px;}
+
+	.next {right: 40px;}
+
+	.buy-coffee {
+			    padding-top: 10px;
+			    padding-bottom: 20px;}
+
+	.buy-coffee h3 {
+				    font-size: 20px;
+				    line-height: 36px;
+				    margin-top: 0px;}
+
+	.buy-coffee__link i {
+					    font-size: 18px;
+					    padding: 5px;
+					    margin-top: 10px;}
+
+	.buy-coffee a {
+				    font-size: 12px;
+				    line-height: 16px;
+				    padding: 3px;
+				    margin-top: 10px;}
+
+	.contacts__content_form input {width: 250px;}
+
+	.contacts__content_form textarea {width: 520px;}
+
+	.prepared-coffee__drinks_item {
+								    width: 400px;
+								    height: 250px;
+								    margin: 5px;}
+
+ }
+
+ @media (max-width: 768px) { 
+
+    .container, .about-coffee {width: 550px;}
+
+    .menu-show {
+               display: flex;
+			   width: 120px;
+			   flex-wrap: wrap;
+			   justify-content: flex-start;
+			   opacity: 0;}
+ 
+    .header__nav_menu-min {display: block;
+                           text-align: right;}
+
+    .show {opacity: 1;}                                          /*добавляем к меню через js,для его отображения*/
+
+    .about-coffee__description_item {max-width: 180px;}
+
+    .header__nav {justify-content: space-around;}
+
+    .buy-coffee h3 {font-size: 16px;}
+
+    .contacts__content {
+					    justify-content: center;
+					    flex-wrap: wrap;}
+
+    #form p {text-align: center;}
+
+ }
+
+ @media (max-width: 576px) { 
+
+ 	.header {padding-bottom: 134px;}
+
+ 	.container, .about-coffee {width: 345px;}
+
+ 	.header__nav {margin-bottom: 40px;}
+
+ 	.header__title h1 {font-size: 20px;}
+
+ 	.about-coffee__description {
+							    display: flex;
+							    justify-content: center;
+							    text-align: center;
+							    flex-wrap: wrap;}
+
+	.about-coffee__description_item {max-width: 250px;
+	                                 padding-bottom: 25px;}
+
+    .prepared-coffee {padding: 0;}
+
+    .buy-coffee h3 {font-size: 11px;
+                   line-height: 10px;}
+
+    .buy-coffee a {line-height: 10px;}
+    
+    .contacts__content_form input {width: 250px;}
+
+    .contacts__content_form textarea {width: 250px;}
+
+    #sub {width: 257px;}
+
+
+ @media (max-width: 400px) {
+
+    .about-us {padding-bottom: 0px;}
+}
